@@ -51,7 +51,7 @@ public class Etal {
 		return "L'étal est libre";
 	}
 
-	public String acheterProduit(int quantiteAcheter, Gaulois acheteur) throws IllegalArgumentException {
+	public String acheterProduit(int quantiteAcheter, Gaulois acheteur) throws IllegalArgumentException, IllegalStateException {
 		if (quantiteAcheter < 1) {
 			throw new IllegalArgumentException("La quantité est inférieur à 1");
 		} if (!etalOccupe) {
